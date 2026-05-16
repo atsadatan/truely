@@ -10,7 +10,6 @@ import { Label } from "@/components/ui/label";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -18,22 +17,29 @@ import {
 import { motion } from "framer-motion";
 import { ArrowLeft, Loader2 } from "lucide-react";
 
-export default function LoginPage() {
+export default function RegisterPage() {
   const t = useTranslations("auth");
   const common = useTranslations("common");
   const router = useRouter();
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  async function handleLogin(e: React.FormEvent) {
+  async function handleRegister(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
     setError("");
 
     const supabase = createClient();
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        data: { display_name: name },
+      },
+    });
 
     if (error) {
       setError(error.message);
@@ -67,15 +73,25 @@ export default function LoginPage() {
         </div>
 
         <Card>
-          <form onSubmit={handleLogin}>
+          <form onSubmit={handleRegister}>
             <CardHeader>
-              <CardTitle>{t("login")}</CardTitle>
-              <CardDescription>{t("orContinueWith")}</CardDescription>
+              <CardTitle>{t("register")}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {error && (
                 <p className="text-sm text-destructive">{error}</p>
               )}
+              <div className="space-y-2">
+                <Label htmlFor="name">ชื่อที่แสดง</Label>
+                <Input
+                  id="name"
+                  type="text"
+                  placeholder="Ploy"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
+              </div>
               <div className="space-y-2">
                 <Label htmlFor="email">{t("email")}</Label>
                 <Input
@@ -88,51 +104,29 @@ export default function LoginPage() {
                 />
               </div>
               <div className="space-y-2">
-                <div className="flex items-center justify-between">
-                  <Label htmlFor="password">{t("password")}</Label>
-                  <button
-                    type="button"
-                    className="text-xs text-muted-foreground hover:text-foreground"
-                  >
-                    {t("forgotPassword")}
-                  </button>
-                </div>
+                <Label htmlFor="password">{t("password")}</Label>
                 <Input
                   id="password"
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
+                  minLength={6}
                 />
               </div>
               <Button className="w-full" type="submit" disabled={loading}>
                 {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                {t("login")}
-              </Button>
-
-              <div className="relative my-4">
-                <div className="absolute inset-0 flex items-center">
-                  <span className="w-full border-t" />
-                </div>
-                <div className="relative flex justify-center text-xs uppercase">
-                  <span className="bg-card px-2 text-muted-foreground">
-                    {t("orContinueWith")}
-                  </span>
-                </div>
-              </div>
-
-              <Button variant="outline" className="w-full" type="button" disabled>
-                Google (coming soon)
+                {t("register")}
               </Button>
             </CardContent>
             <CardFooter className="justify-center">
               <p className="text-sm text-muted-foreground">
-                {t("noAccount")}{" "}
+                {t("hasAccount")}{" "}
                 <Link
-                  href="/register"
+                  href="/login"
                   className="font-medium text-foreground hover:underline"
                 >
-                  {t("register")}
+                  {t("login")}
                 </Link>
               </p>
             </CardFooter>
