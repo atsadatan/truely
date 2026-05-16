@@ -2,7 +2,7 @@
 
 ## About the User
 - **Name**: Atsada
-- **Role**: Product Designer at IUX
+- **Role**: Junior Product Manager at Fintect
 - **Goal**: Building Truely — an AI-driven self-discovery platform for university students
 - **Experience**: Product/UX design background. Learning to build with AI tools (Claude Code). First full-stack project.
 - **GitHub**: atsadatan
