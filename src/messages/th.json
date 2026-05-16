@@ -1,0 +1,77 @@
+{
+  "common": {
+    "appName": "Truely",
+    "tagline": "เข้าใจตัวเอง โฟกัสสิ่งที่สำคัญ",
+    "loading": "กำลังโหลด...",
+    "error": "เกิดข้อผิดพลาด",
+    "retry": "ลองอีกครั้ง",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "next": "ถัดไป",
+    "back": "กลับ",
+    "done": "เสร็จสิ้น",
+    "seeAll": "ดูทั้งหมด"
+  },
+  "landing": {
+    "hero": "รู้จักตัวเองอย่างแท้จริง",
+    "subtitle": "แพลตฟอร์ม AI ที่ช่วยให้คุณค้นพบจุดแข็ง จุดอ่อน และสิ่งที่สำคัญที่สุดในชีวิต",
+    "cta": "เริ่มค้นหาตัวเอง",
+    "login": "เข้าสู่ระบบ"
+  },
+  "auth": {
+    "login": "เข้าสู่ระบบ",
+    "register": "สมัครสมาชิก",
+    "email": "อีเมล",
+    "password": "รหัสผ่าน",
+    "forgotPassword": "ลืมรหัสผ่าน?",
+    "orContinueWith": "หรือดำเนินการด้วย",
+    "noAccount": "ยังไม่มีบัญชี?",
+    "hasAccount": "มีบัญชีอยู่แล้ว?"
+  },
+  "onboarding": {
+    "welcome": "ยินดีต้อนรับสู่ Truely",
+    "step1Title": "ค้นพบตัวเอง",
+    "step1Desc": "ตอบคำถามง่ายๆ เพื่อเข้าใจจุดแข็งและจุดอ่อนของคุณ",
+    "step2Title": "ดู Dashboard ของคุณ",
+    "step2Desc": "ผลลัพธ์ที่ชัดเจน พร้อมแผนพัฒนาเฉพาะตัว",
+    "step3Title": "เติบโตทุกวัน",
+    "step3Desc": "Journal และติดตามพัฒนาการของคุณ"
+  },
+  "assessment": {
+    "title": "แบบประเมินตัวเอง",
+    "start": "เริ่มทำแบบประเมิน",
+    "resume": "ทำต่อ",
+    "progress": "คำถามที่ {current} จาก ~{total}",
+    "thinking": "กำลังวิเคราะห์...",
+    "complete": "เสร็จสิ้น!",
+    "viewResults": "ดูผลลัพธ์",
+    "retake": "ทำแบบประเมินอีกครั้ง"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "strengths": "จุดแข็งของคุณ",
+    "growthAreas": "สิ่งที่ควรพัฒนา",
+    "topStrengths": "จุดแข็ง Top 5",
+    "plan": "แผนพัฒนาตัวเอง",
+    "recentJournal": "Journal ล่าสุด"
+  },
+  "journal": {
+    "title": "Journal",
+    "newEntry": "เขียน Journal ใหม่",
+    "prompt": "คำถามวันนี้",
+    "placeholder": "เขียนความคิดของคุณที่นี่...",
+    "mood": "อารมณ์",
+    "energy": "พลังงาน",
+    "insights": "AI พบว่า...",
+    "entries": "รายการทั้งหมด"
+  },
+  "plan": {
+    "title": "แผนพัฒนาตัวเอง",
+    "thisWeek": "สัปดาห์นี้",
+    "thisMonth": "เดือนนี้",
+    "thisSemester": "เทอมนี้",
+    "markDone": "ทำเสร็จแล้ว",
+    "inProgress": "กำลังทำ",
+    "todo": "ยังไม่ได้ทำ"
+  }
+}

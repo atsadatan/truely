@@ -1,0 +1,77 @@
+{
+  "common": {
+    "appName": "Truely",
+    "tagline": "Understand yourself. Focus on what matters.",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "save": "Save",
+    "cancel": "Cancel",
+    "next": "Next",
+    "back": "Back",
+    "done": "Done",
+    "seeAll": "See all"
+  },
+  "landing": {
+    "hero": "Truly understand yourself",
+    "subtitle": "An AI platform that helps you discover your strengths, weaknesses, and what matters most in your life",
+    "cta": "Start your self-discovery",
+    "login": "Log in"
+  },
+  "auth": {
+    "login": "Log in",
+    "register": "Sign up",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "orContinueWith": "Or continue with",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "onboarding": {
+    "welcome": "Welcome to Truely",
+    "step1Title": "Discover yourself",
+    "step1Desc": "Answer simple questions to understand your strengths and weaknesses",
+    "step2Title": "See your Dashboard",
+    "step2Desc": "Clear results with a personalized development plan",
+    "step3Title": "Grow every day",
+    "step3Desc": "Journal and track your progress"
+  },
+  "assessment": {
+    "title": "Self Assessment",
+    "start": "Start Assessment",
+    "resume": "Resume",
+    "progress": "Question {current} of ~{total}",
+    "thinking": "Analyzing...",
+    "complete": "Complete!",
+    "viewResults": "View Results",
+    "retake": "Retake Assessment"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "strengths": "Your Strengths",
+    "growthAreas": "Growth Areas",
+    "topStrengths": "Top 5 Strengths",
+    "plan": "Development Plan",
+    "recentJournal": "Recent Journal"
+  },
+  "journal": {
+    "title": "Journal",
+    "newEntry": "New Entry",
+    "prompt": "Today's prompt",
+    "placeholder": "Write your thoughts here...",
+    "mood": "Mood",
+    "energy": "Energy",
+    "insights": "AI found that...",
+    "entries": "All entries"
+  },
+  "plan": {
+    "title": "Development Plan",
+    "thisWeek": "This week",
+    "thisMonth": "This month",
+    "thisSemester": "This semester",
+    "markDone": "Mark as done",
+    "inProgress": "In progress",
+    "todo": "To do"
+  }
+}
